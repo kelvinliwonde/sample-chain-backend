@@ -1,9 +1,9 @@
 services:
   - type: web
     name: sample-chain-backend
-    env: python
+    runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    startCommand: gunicorn app.main:app -k uvicorn.workers.UvicornWorker
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -40,6 +40,6 @@ services:
       - key: SMTP_FROM
         sync: false
 
-  - type: postgresql
-    name: sample-chain-db
+databases:
+  - name: sample-chain-db
     plan: free
