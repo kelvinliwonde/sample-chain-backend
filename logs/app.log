@@ -1,0 +1,16 @@
+{"timestamp": "2026-06-21T12:34:44.357794", "level": "INFO", "message": "Application starting up", "module": "main", "function": "lifespan", "line": 20}
+{"timestamp": "2026-06-21T12:35:55.926657", "level": "INFO", "message": "Application shutting down", "module": "main", "function": "lifespan", "line": 26}
+{"timestamp": "2026-06-21T12:35:59.190125", "level": "INFO", "message": "Application starting up", "module": "main", "function": "lifespan", "line": 20}
+{"timestamp": "2026-06-21T12:37:10.702264", "level": "INFO", "message": "Application shutting down", "module": "main", "function": "lifespan", "line": 26}
+{"timestamp": "2026-06-21T12:37:14.028132", "level": "INFO", "message": "Application starting up", "module": "main", "function": "lifespan", "line": 20}
+{"timestamp": "2026-06-21T12:37:49.002735", "level": "INFO", "message": "Application shutting down", "module": "main", "function": "lifespan", "line": 26}
+{"timestamp": "2026-06-21T12:37:52.138019", "level": "INFO", "message": "Application starting up", "module": "main", "function": "lifespan", "line": 20}
+{"timestamp": "2026-06-21T12:39:31.361355", "level": "INFO", "message": "Application shutting down", "module": "main", "function": "lifespan", "line": 26}
+{"timestamp": "2026-06-21T12:39:34.766859", "level": "INFO", "message": "Application starting up", "module": "main", "function": "lifespan", "line": 20}
+{"timestamp": "2026-06-21T12:40:04.354547", "level": "INFO", "message": "Application shutting down", "module": "main", "function": "lifespan", "line": 26}
+{"timestamp": "2026-06-21T12:40:07.596658", "level": "INFO", "message": "Application starting up", "module": "main", "function": "lifespan", "line": 20}
+{"timestamp": "2026-06-21T12:40:27.035585", "level": "INFO", "message": "Application shutting down", "module": "main", "function": "lifespan", "line": 26}
+{"timestamp": "2026-06-21T12:40:35.767846", "level": "INFO", "message": "Application starting up", "module": "main", "function": "lifespan", "line": 20}
+{"timestamp": "2026-06-21T12:56:15.769636", "level": "INFO", "message": "Application shutting down", "module": "main", "function": "lifespan", "line": 26}
+{"timestamp": "2026-06-21T13:06:16.860618", "level": "INFO", "message": "Application starting up", "module": "main", "function": "lifespan", "line": 20}
+{"timestamp": "2026-06-21T13:51:40.426544", "level": "INFO", "message": "Application starting up", "module": "main", "function": "lifespan", "line": 20}
