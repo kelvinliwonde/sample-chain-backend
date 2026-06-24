@@ -21,3 +21,4 @@ openpyxl
 reportlab
 boto3
 psycopg2-binary==2.9.9
+asyncpg==0.31.0
