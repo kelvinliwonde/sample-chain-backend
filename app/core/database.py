@@ -2,7 +2,7 @@ from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sess
 from sqlalchemy.orm import declarative_base
 from app.core.config import settings
 
-# Create async engine
+# This uses asyncpg automatically with the postgresql+asyncpg:// URL
 engine = create_async_engine(
     settings.DATABASE_URL,
     echo=settings.DEBUG,
@@ -16,10 +16,8 @@ AsyncSessionLocal = async_sessionmaker(
     autoflush=False,
 )
 
-# Base class for all models
 Base = declarative_base()
 
-# Dependency to get DB session
 async def get_db() -> AsyncSession:
     async with AsyncSessionLocal() as session:
         try:
