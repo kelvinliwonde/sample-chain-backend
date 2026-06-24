@@ -12,6 +12,12 @@ engine = create_async_engine(
     settings.DATABASE_URL,
     echo=settings.DEBUG,
     connect_args={"ssl": ssl_context},
+    # Neon (and most serverless/managed Postgres) silently closes idle connections.
+    # pool_pre_ping tests each connection with a lightweight query before using it,
+    # transparently reconnecting if it was dropped, instead of raising InterfaceError.
+    pool_pre_ping=True,
+    # Proactively recycle connections before Neon's idle timeout can close them.
+    pool_recycle=300,
 )
 
 AsyncSessionLocal = async_sessionmaker(
