@@ -19,13 +19,16 @@ class Settings(BaseSettings):
     
     # Storage
     UPLOAD_DIR: str = "./uploads/photos"
-    MAX_PHOTO_SIZE: int = 5_242_880  # 5MB
+    MAX_PHOTO_SIZE: int = 5_242_880
     
-    # CORS
+    # CORS - List of strings
     ALLOWED_ORIGINS: List[str] = [
         "http://localhost:3000",
         "http://localhost:8000",
     ]
+    
+    # App URL
+    APP_URL: str = "http://localhost:3000"
     
     # Email Settings
     SMTP_HOST: Optional[str] = None
@@ -33,13 +36,12 @@ class Settings(BaseSettings):
     SMTP_USER: Optional[str] = None
     SMTP_PASSWORD: Optional[str] = None
     SMTP_FROM: Optional[str] = None
-    APP_URL: str = "http://localhost:3000"
     
     model_config = ConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
         case_sensitive=True,
-        extra="ignore",  # Allows extra fields in .env
+        extra="ignore",
     )
 
 settings = Settings()
