@@ -6,7 +6,7 @@ services:
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: DATABASE_URL
-        value: postgresql+asyncpg://neondb_owner:npg_7uzY6UTJnglc@ep-red-mouse-aie753ai.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require
+        value: postgresql+asyncpg://neondb_owner:npg_7uzY6UTJnglc@ep-red-mouse-aie753ai.c-4.us-east-1.aws.neon.tech/neondb
       - key: SECRET_KEY
         value: your-super-secret-key-change-in-production-2026
       - key: ALGORITHM
