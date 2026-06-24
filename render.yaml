@@ -6,9 +6,9 @@ services:
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: DATABASE_URL
-        value: postgresql+asyncpg://neondb_owner:npg_7uzY6UTJnglc@ep-red-mouse-aie753ai.c-4.us-east-1.aws.neon.tech/neondb
+        value: postgresql+asyncpg://neondb_owner:npg_Lq7JVQGK8lSp@ep-red-mouse-aie753ai.c-4.us-east-1.aws.neon.tech/neondb
       - key: SECRET_KEY
-        value: your-super-secret-key-change-in-production-2026
+        value: OPhDHyZyNWTSoJbYRFBhYf_dNNasRk81eoQ7bq-armc
       - key: ALGORITHM
         value: HS256
       - key: ACCESS_TOKEN_EXPIRE_MINUTES
@@ -24,7 +24,7 @@ services:
       - key: MAX_PHOTO_SIZE
         value: 5242880
       - key: ALLOWED_ORIGINS
-        value: https://sample-chain-frontend.onrender.com
+        value: '["https://sample-chain-frontend.onrender.com"]'
       - key: APP_URL
         value: https://sample-chain-frontend.onrender.com
       - key: PYTHON_VERSION
