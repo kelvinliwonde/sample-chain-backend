@@ -17,8 +17,6 @@ httpx
 aiosqlite
 asyncpg
 aiosmtplib
-openpyxl
-reportlab
 boto3
 openpyxl==3.1.5
 reportlab==4.2.5
